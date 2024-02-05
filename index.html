@@ -32,25 +32,26 @@
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
       const ImageLandScape = document.querySelector("#LandScapeImage");
-        if(window.innerHeight < window.innerWidth){
+        if(window.innerHeight > window.innerWidth){
 
-           ImageLandScape.style.display="block"
+          ImageLandScape.style.display="none"
+          
            
         }
       else{
-         ImageLandScape.style.display="none"
-       
+        
+        ImageLandScape.style.display="block"
       }
-        window.addEventListener("resize", myFunction);
+      window.addEventListener("resize", myFunction);
        function myFunction() {
               if(window.innerHeight > window.innerWidth){
-
-           ImageLandScape.style.display="block"
+                ImageLandScape.style.display="none"
+        
            
         }
       else{
-         ImageLandScape.style.display="none"
-       
+        
+        ImageLandScape.style.display="block"
       }
 }
    
